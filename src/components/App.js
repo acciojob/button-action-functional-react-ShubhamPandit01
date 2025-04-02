@@ -6,10 +6,8 @@ function App() {
   const [flag, setFlag] = useState(false)
   return (
     <div id="main">
-      // Do not alter the main div
-      <h1>hubham</h1>
-      <button id='click' onClick={setFlag(true)}>Click</button>
-      {flag && <p>"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy."</p>}
+      <button id='click' onClick={()=>setFlag(true)}>Click</button>
+      {flag && <p id='para'>"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy."</p>}
     </div>
   );
 }
